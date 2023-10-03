@@ -1,0 +1,99 @@
+body{
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="36" height="72" viewBox="0 0 36 72"%3E%3Cg fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+}
+
+span {
+  color: #46166b;
+  text-align: center;
+}
+
+
+header {
+  background: gray;
+}
+header::after{
+  content:'';
+  display:table;
+  clear: both;
+}
+
+.logo{
+  float : left;
+  margin-top:0;
+  margin-bottom: 0;
+  
+}
+
+nav{
+  float: right;
+}
+
+nav ul{
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 25px;
+}
+
+nav a{
+  color: black;
+  text-transform: uppercase;
+  font-size: 21px;
+}
+
+nav a:hover{
+  color: white
+}
+
+.pic{
+  width:350px;
+  border-radius: 20px;
+  display:block;
+  align: center;
+}  
+
+
+.pic-container{
+  display:flex;
+  align-items: cneter;
+}
+
+.hobbies-card {
+  width: 300px;
+  height: 500px;
+  box-shadow: 5px 5px 20px rgb(197, 195, 195);
+  margin: 10px;
+  background-color: bisque;
+  text-align: center;
+  
+}
+
+.hobbies-container {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+
+.hobbies-image {
+  margin-top: 25px;
+  width: 250px;
+  border-radius: 25px;
+}
+
+h1{
+  text-align: center;
+
+}
+.social-icons p{
+  align-items:center;
+}
+
+footer h2{
+  text-align : center;
+}
