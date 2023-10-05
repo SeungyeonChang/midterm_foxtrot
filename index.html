@@ -5,62 +5,132 @@
   <title>foxTrot</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<header>
-  <div class ="container">
-    <img src ="logo.jpg" alt="logo" class ="logo border"  height = 80px, width =95px/>
-    <nav>
-      <ul>
-        <li class ="nav-item border"><a href ="#about">About Me</a></li>
-        <li class ="nav-item border"><a href ="#hobbies">Hobbies</a></li>
-        <li class ="nav-item border"><a href ="#contact">Contact Me</a></li>
-        <li class ="nav-item border"><a href ="#">See Code</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<section class ="sub-section" id ="about">
-  <div class ="information">
-    <h1> About Me</h1>
-    <div class ="pic-container">
-      <img class ="pic" src ="photo.jpg" alt ="pic of me" />
-    </div>
-    <h2 class="name"><span>Seungyeon Chang</span></h2>
-    <p class="address">UNIVERSITY OF NORTH ALABAMA · FLORENCE, AL 35632 · (256) 415-2400 · <a href="mailto:schang10@una.edu">schang10@una.edu</a>
-      <br>I am an international student from South Korea. Currently, I am a Bachelor's Degree in Computer Information Systems at University of North Alabama.</p> 
-      <p>If you are interented in me, here is my Resume <a href ="my resume.pdf">CLICK HERE</a></p>
-  </div>
-</section>
-<p class="job-title"></p>
-<div class="social-icons">
-  <p> <a href="https://www.codepen.io/SeungyeonChang" target="_blank" rel="noreferrer"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/codepen-dark.svg" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/codepen.svg" /> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/codepen.svg" width="32" height="32" /> </picture> </a> <a href="https://www.facebook.com/SeungyeonChang" target="_blank" rel="noreferrer"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/facebook-dark.svg" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/facebook.svg" /> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/facebook.svg" width="32" height="32" /> </picture> </a> <a href="https://www.github.com/SeungyeonChang" target="_blank" rel="noreferrer"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github-dark.svg" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" /> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32" height="32" /> </picture> </a> <a href="http://www.instagram.com/_helen_seungyeon_" target="_blank" rel="noreferrer"> <picture> <source media="(prefers-color-scheme: dark)" srcset="undefined" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" /> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" width="32" height="32" /> </picture> </a> <a href="https://www.linkedin.com/in/seungyeon-chang-0ab704221/" target="_blank" rel="noreferrer"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin-dark.svg" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" /> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /> </picture> </a></p>
-  <section class ="sub-section-alternative" id ="hobbies">
-    <h1>Hobbies</h1>
-    <div class ="hobbies-container">
-      <div class ="hobbies-card">
-        <img class ="hobbies-image" src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZuaIwZY4diqfwuSSXoHvxpQAus9z1WRHjmw&usqp=CAU" alt ="first image"/>
-        <h3>Golf</h3>
-        <p class ="about">I've been playing this since I came to the US, This sports is the most diffcult I've done so far!</p>
+  <section class="home">
+    <nav id="myNav" class="navbar navbar fixed-top navbar-expand-lg navbar-light" style ="background-color: #0a5d61">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="logo" src = "logog.jpg" alt="logoPic"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-md-auto gap-2">
+            <li class="nav-item rounded">
+              <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-fill me-2"></i>Home</a>
+            </li>
+            <li class="nav-item rounded">
+              <a class="nav-link" href="#about"><i class="bi bi-person-fill me-2"></i>Profile</a>
+            </li>
+            <li class="nav-item rounded">
+              <a class="nav-link" href="#hobbies"><i class="bi bi-emoji-smile-fill"></i> Hobbies</a>
+            </li>
+            <li class="nav-item rounded">
+              <a class="nav-link" href="#contact"><i class="bi bi-telephone-fill me-2"></i>Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class ="hobbies-container">
-        <div class ="hobbies-card">
-          <img class = "hobbies-image" src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5rMc_GrSsJloMACTl_F3xCZVtTuWYkUvgQg&usqp=CAU"/>
-          <h3>Bowling</h3>
-          <p class="about">I've been playing this longer than golf and I was going to do the local tournament. However, I could not do it because of COVID. I still love to play it!</p>
+    </nav>
+    <div class="vh-100 d-flex justify-content-center align-items-center">
+      <div class ="home-area">
+        <div class="home-text">
+        <!-- <section class="intro" id="home"> -->
+          <!-- <div class ="introduction"> -->
+            <h1>Hello, world👋</h1>
+            <h2>Welcome to my world!🤪</h2>
+            <h1>Are you ready to check it out?😏</h1>
         </div>
       </div>
     </div>
   </section>
-</div>
-<footer id="contact">
-  <h1> Contact Me</h1>
-  <h2><a href="mailto:schang10@una.edu">schang10@una.edu</a></h2>
-</footer>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script><script  src="script/script.js"></script>
+  <!-- </section> -->
+  <section class ="sub-section" id ="about">
+    <div class ="information">
+      <h1><br><br>About Me<br><br><br></h1>
+       <h2 class="name"><span>Seungyeon Chang</span></h2>
+       <!-- </div>UNIVERSITY OF NORTH ALABAMA · FLORENCE, AL 35632 · (256) 415-2400 · <a href="mailto:schang10@una.edu">schang10@una.edu</a> -->
+      <div class ="pic-container">
+        <h3>  <img src ="img.jpg" alt ="pic of me2"  style ="float:left;width:350px;border-radius:20%; margin-right:50px;">I am an international student from Seoul, South Korea.  <img src ="photo.jpg" alt ="pic of me"  style ="float:right;width:350px;border-radius:20%;">
+        <br>Currently, I am a Bachelor's Degree in Computer Information Systems at University of North Alabama.
+        <br>I am planning to greaduate in 2024 Spring.
+        <br>If you are interented in me, here is my Resume <a href ="myResume.pdf">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#0a5d61" class="bi bi-file-earmark-pdf-fill" viewBox="0 0 16 16">
+            <path d="M5.523 12.424c.14-.082.293-.162.459-.238a7.878 7.878 0 0 1-.45.606c-.28.337-.498.516-.635.572a.266.266 0 0 1-.035.012.282.282 0 0 1-.026-.044c-.056-.11-.054-.216.04-.36.106-.165.319-.354.647-.548zm2.455-1.647c-.119.025-.237.05-.356.078a21.148 21.148 0 0 0 .5-1.05 12.045 12.045 0 0 0 .51.858c-.217.032-.436.07-.654.114zm2.525.939a3.881 3.881 0 0 1-.435-.41c.228.005.434.022.612.054.317.057.466.147.518.209a.095.095 0 0 1 .026.064.436.436 0 0 1-.06.2.307.307 0 0 1-.094.124.107.107 0 0 1-.069.015c-.09-.003-.258-.066-.498-.256zM8.278 6.97c-.04.244-.108.524-.2.829a4.86 4.86 0 0 1-.089-.346c-.076-.353-.087-.63-.046-.822.038-.177.11-.248.196-.283a.517.517 0 0 1 .145-.04c.013.03.028.092.032.198.005.122-.007.277-.038.465z"/>
+            <path fill-rule="evenodd" d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3zM4.165 13.668c.09.18.23.343.438.419.207.075.412.04.58-.03.318-.13.635-.436.926-.786.333-.401.683-.927 1.021-1.51a11.651 11.651 0 0 1 1.997-.406c.3.383.61.713.91.95.28.22.603.403.934.417a.856.856 0 0 0 .51-.138c.155-.101.27-.247.354-.416.09-.181.145-.37.138-.563a.844.844 0 0 0-.2-.518c-.226-.27-.596-.4-.96-.465a5.76 5.76 0 0 0-1.335-.05 10.954 10.954 0 0 1-.98-1.686c.25-.66.437-1.284.52-1.794.036-.218.055-.426.048-.614a1.238 1.238 0 0 0-.127-.538.7.7 0 0 0-.477-.365c-.202-.043-.41 0-.601.077-.377.15-.576.47-.651.823-.073.34-.04.736.046 1.136.088.406.238.848.43 1.295a19.697 19.697 0 0 1-1.062 2.227 7.662 7.662 0 0 0-1.482.645c-.37.22-.699.48-.897.787-.21.326-.275.714-.08 1.103z"/>
+          </svg>
+        </i></a></h3>
+      </div>
+    </div>
+  </section>
+  <section class ="sub-section-alternative" id ="hobbies">
+    <h1><br><br>Hobbies<br><br></h1>
+    <div class ="hobbies-container">
+      <div class ="hobbies-card">
+        <img class ="hobbies-image" src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZuaIwZY4diqfwuSSXoHvxpQAus9z1WRHjmw&usqp=CAU" alt ="first-image"/>
+        <h3><br>Golf</h3>
+        <p class ="about"><br>I've been playing this since I came to the US, This sport is the most difficult I've done so far!</p>
+      </div>
+      <div class ="hobbies-container">
+        <div class ="hobbies-card">
+          <img class = "hobbies-image" src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5rMc_GrSsJloMACTl_F3xCZVtTuWYkUvgQg&usqp=CAU" alt="second-image"/>
+          <h3><br>Bowling</h3>
+          <p class="about"><br>I've been playing this longer than golf and I was going to do the local tournament. However, I could not do it because of COVID. I still love to play it!</p>
+        </div>
+      </div>
+      <div class ="hobbies-container">
+        <div class ="hobbies-card">
+          <img class = "hobbies-image" src ="https://news.harvard.edu/wp-content/uploads/2018/01/musicstudy-1200x800.jpg" alt="last-image"/>
+          <h3><br>Music</h3>
+          <p class="about">I've been playing many type of instruments untill high shcool. After I came to the college I didn't play, but I really like to listen to music!</p>
+          <p class="about">If you want to know about my playlist, you can check here!<a href ="https://l.instagram.com/?u=https%3A%2F%2Fspotify.link%2FLf0I4qfKCDb&e=AT3Hby2eAGh6cMjx3LZPNpB_Rb2YavyRkb793MP_acE1xTh93VDurbyPQwDFu9SG84dwvu3sc6hOLEgL2_ppq8pED9C4KseZ-JY187XrGt_rASHGHXil6N6OOhWPsbNRjCHuaVmvON8ZaUZpWMlOig"><i class="bi bi-music-player-fill"></i>
+          </a></p>
+        </div>
+      </div>             
+    </div>
+  </section>
 
+  <section class ="social" id="contact">
+    <div class = "socials">
+      <h1><br><br><br><br><br>CONTACT ME<br><br><br></h1>
+      <p>UNIVERSITY OF NORTH ALABAMA · FLORENCE, AL 35632 · (256) 415-2400 · <a href="mailto:schang10@una.edu">schang10@una.edu</a>
+      </p>
+        <div>
+          <a href ="https://github.com/SeungyeonChang" class="icons">
+            <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="#0a5d61" class="bi bi-github" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </a>
+          <a href ="https://www.facebook.com/profile.php?id=100007150959422" class ="icons">
+            <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="#0a5d61" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg>
+          </a>
+          <a href ="https://www.instagram.com/_helen_seungyeon_/" class="icons">
+            <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="#0a5d61" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </svg>
+          </a>
+          <a href ="https://www.linkedin.com/in/seungyeon-chang-0ab704221/" class="icons">
+            <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="#0a5d61" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+            </svg> 
+          </a>
+          <a href ="mailto:schang10@una.edu" class ="icons">
+            <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="#0a5d61" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+              <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+              <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+            </svg>
+          </a>
+        </div>
+    </div>
+
+  </section>
+  <div class="bg-dark text-white">
+    <p class="text-center p-4 m-0"><a href= "https://github.com/SeungyeonChang/midterm_foxtrot"  target ="_blank" class="code">Check Code</a> | CIS 376 01 | <a href= "https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fseungyeonchang.github.io%2Fmidterm_foxtrot%2F " target="_blank" class="validator">Validation</a></p>
+  </div>
+  
 </body>
 </html>
